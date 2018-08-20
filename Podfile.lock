@@ -1,0 +1,16 @@
+PODS:
+  - RJExtension (1.0.5)
+
+DEPENDENCIES:
+  - RJExtension
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RJExtension
+
+SPEC CHECKSUMS:
+  RJExtension: 750ee1f177e942c20aed3648a7e9a4a1c01f638c
+
+PODFILE CHECKSUM: 834e84b8c08a89eaf0699c1cc1f7e58938dd5d5f
+
+COCOAPODS: 1.5.3

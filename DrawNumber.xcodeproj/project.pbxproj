@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499F0F9DBBAD0A3EF61C4E43 /* Pods_DrawNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FB94F55CDFBB809C5A4715 /* Pods_DrawNumber.framework */; };
 		560C0F2C212A64C7000EE45E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C0F2B212A64C7000EE45E /* AppDelegate.swift */; };
 		560C0F2E212A64C7000EE45E /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C0F2D212A64C7000EE45E /* DrawViewController.swift */; };
 		560C0F31212A64C7000EE45E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560C0F2F212A64C7000EE45E /* Main.storyboard */; };
 		560C0F33212A64C9000EE45E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560C0F32212A64C9000EE45E /* Assets.xcassets */; };
 		560C0F36212A64C9000EE45E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560C0F34212A64C9000EE45E /* LaunchScreen.storyboard */; };
+		560C0F3E212A67CD000EE45E /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C0F3D212A67CD000EE45E /* DrawView.swift */; };
+		560C0F40212A6A0D000EE45E /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C0F3F212A6A0D000EE45E /* Line.swift */; };
+		560C0F42212A7235000EE45E /* MNIST.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 560C0F41212A7235000EE45E /* MNIST.mlmodel */; };
+		560C0F44212A9081000EE45E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C0F43212A9081000EE45E /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C86BEE92F06BCE81428368C /* Pods-DrawNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawNumber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawNumber/Pods-DrawNumber.debug.xcconfig"; sourceTree = "<group>"; };
 		560C0F28212A64C7000EE45E /* DrawNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		560C0F2B212A64C7000EE45E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		560C0F2D212A64C7000EE45E /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		560C0F32212A64C9000EE45E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		560C0F35212A64C9000EE45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		560C0F37212A64C9000EE45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		560C0F3D212A67CD000EE45E /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		560C0F3F212A6A0D000EE45E /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		560C0F41212A7235000EE45E /* MNIST.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNIST.mlmodel; sourceTree = "<group>"; };
+		560C0F43212A9081000EE45E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		65FB94F55CDFBB809C5A4715 /* Pods_DrawNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36108C6120BFB6EB11D9FA4 /* Pods-DrawNumber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawNumber.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawNumber/Pods-DrawNumber.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499F0F9DBBAD0A3EF61C4E43 /* Pods_DrawNumber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AD53E9AAFA2ACF8EA5FD8A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65FB94F55CDFBB809C5A4715 /* Pods_DrawNumber.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		560C0F1F212A64C7000EE45E = {
 			isa = PBXGroup;
 			children = (
 				560C0F2A212A64C7000EE45E /* DrawNumber */,
 				560C0F29212A64C7000EE45E /* Products */,
+				DB8E97B052B33C5694224A04 /* Pods */,
+				2AD53E9AAFA2ACF8EA5FD8A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,27 @@
 		560C0F2A212A64C7000EE45E /* DrawNumber */ = {
 			isa = PBXGroup;
 			children = (
+				560C0F41212A7235000EE45E /* MNIST.mlmodel */,
 				560C0F2B212A64C7000EE45E /* AppDelegate.swift */,
 				560C0F2D212A64C7000EE45E /* DrawViewController.swift */,
+				560C0F3D212A67CD000EE45E /* DrawView.swift */,
+				560C0F3F212A6A0D000EE45E /* Line.swift */,
+				560C0F43212A9081000EE45E /* Extension.swift */,
 				560C0F2F212A64C7000EE45E /* Main.storyboard */,
 				560C0F32212A64C9000EE45E /* Assets.xcassets */,
 				560C0F34212A64C9000EE45E /* LaunchScreen.storyboard */,
 				560C0F37212A64C9000EE45E /* Info.plist */,
 			);
 			path = DrawNumber;
+			sourceTree = "<group>";
+		};
+		DB8E97B052B33C5694224A04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C86BEE92F06BCE81428368C /* Pods-DrawNumber.debug.xcconfig */,
+				B36108C6120BFB6EB11D9FA4 /* Pods-DrawNumber.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 560C0F3A212A64C9000EE45E /* Build configuration list for PBXNativeTarget "DrawNumber" */;
 			buildPhases = (
+				9773C8E315C75C2E0179E427 /* [CP] Check Pods Manifest.lock */,
 				560C0F24212A64C7000EE45E /* Sources */,
 				560C0F25212A64C7000EE45E /* Frameworks */,
 				560C0F26212A64C7000EE45E /* Resources */,
+				599DFE60C869E28B964828CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +168,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		599DFE60C869E28B964828CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DrawNumber/Pods-DrawNumber-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RJExtension/RJExtension.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RJExtension.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawNumber/Pods-DrawNumber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9773C8E315C75C2E0179E427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawNumber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		560C0F24212A64C7000EE45E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				560C0F2E212A64C7000EE45E /* DrawViewController.swift in Sources */,
+				560C0F40212A6A0D000EE45E /* Line.swift in Sources */,
 				560C0F2C212A64C7000EE45E /* AppDelegate.swift in Sources */,
+				560C0F44212A9081000EE45E /* Extension.swift in Sources */,
+				560C0F42212A7235000EE45E /* MNIST.mlmodel in Sources */,
+				560C0F3E212A67CD000EE45E /* DrawView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +359,7 @@
 		};
 		560C0F3B212A64C9000EE45E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C86BEE92F06BCE81428368C /* Pods-DrawNumber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +378,7 @@
 		};
 		560C0F3C212A64C9000EE45E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36108C6120BFB6EB11D9FA4 /* Pods-DrawNumber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
